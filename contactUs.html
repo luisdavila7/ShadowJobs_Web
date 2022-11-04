@@ -12,6 +12,34 @@
    
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Shadow Jobs</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a class="btn btn-outline-primary" href="/login.html" role="button">Login</a>
+          </form>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="text-center">
         <h1>Contac with ShadowJobs</h1>
@@ -19,9 +47,9 @@
         <p class="lead">You have Questions? Do not hesitate to contact us.</p>
       </div>
       <div class="row justify-content-center my-5">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <form action="">
-            <div class="form-floating my-5">
+            <div class="form-floating my-2">
               <input
                 type="email"
                 id="email"
@@ -30,7 +58,7 @@
               />
               <label for="email" class="form-label">Email:</label>
             </div>
-            <div class="form-floating my-5">
+            <div class="form-floating my-3">
               <input
                 type="name"
                 id="name"
@@ -41,11 +69,12 @@
             </div>
             <label for="subject" class="form=label">Subject</label>
               <select name="subject" id="subject" class="form-select">
-                <option value="pricing">Pricing</option>
-                <option value="technical" selected>Technical question</option>
+                <option value="shadown" selected>For Shadown</option>
+                <option value="restaurants" >For Restaurants</option>
+                <option value="technical">Technical question</option>
                 <option value="other">Other</option>
               </select>
-            <div class="form-floating my-5">
+            <div class="form-floating my-3">
               <textarea
                 name="query"
                 id="query"
